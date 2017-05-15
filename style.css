@@ -20,7 +20,7 @@ nav.fixed {
     left: 0;
     height: 80px;
     position: fixed;
-    padding: 10px 70px;
+    padding: 10px 110px;
     display: inline-flex;
     z-index: 999;
     background-color: white;
@@ -33,7 +33,7 @@ nav.fixed {
 }
 
 ul.nav-list {
-    margin-left: 10px;
+    margin-left: 30px;
     padding: 20px 30px;
     display: flex;
     flex-flow: row wrap;
@@ -103,7 +103,7 @@ width: 323px;
 }
 
 div.credibility {
-    padding: 0 70px;
+    padding: 0 110px;
     width: 100%;
     height: 80px;
     background-color: white;
@@ -133,18 +133,78 @@ div.media-list {
 }
 
 div.sm-subscribe {
+    color: white;
     background-color: #1eb6e7;
     width: 100%;
     height: 250px;
-    padding: 0 70px;
+    padding: 0 110px;
 }
 
 div.podcast {
 width: 50%;
     float: left;
+    margin: 30px 0;
 }
 
 div.offer {
     width: 50%;
     float: right;
+    padding: 30px;
 }
+
+.offer ul {
+    margin-top: 12px;
+}
+
+div.btn-itunes {
+    float: left;
+    margin-top: 30px;
+    margin-right: 20px;
+
+}
+
+.podcast h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+div.btn-stitcher {
+    float: left;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.speakers h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+div.episode-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+div.person {
+    width: 600px;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+div.photo {
+    padding-top: 10px;
+    width: 200px;
+    float: left;
+}
+
+.about-person h4 {
+
+}
+
+div.about-person {
+    padding: 0 20px;
+    float: right;
+    width: 358px;
+}
+
