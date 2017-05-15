@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    color: #666;
+}
+
+.wrapper {
+    margin-top: 80px;
+}
+
+nav.fixed {
+    top: 0;
+    left: 0;
+    height: 80px;
+    position: fixed;
+    padding: 10px 70px;
+    display: inline-flex;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+}
+
+
+.logo img {
+    height: 60px;
+}
+
+ul.nav-list {
+    margin-left: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 90%;
+
+}
+.nav-list a {
+    flex: 1;
+    color: #666;
+    width: 100px;
+    /*flex-direction: row;*/
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list a:hover {
+    color: #08b6e6;
+}
+.search img {
+    width: 17px;
+}
+
+div.banner {
+    color: white;
+    height: 550px;
+    position: relative;
+    background: url(http://pushbuttoninfluence.com/show/wp-content/uploads/2016/02/banner-3-1.jpg) no-repeat left top;
+    background-size: cover;
+}
+
+div.CTA {
+    width: 100%;
+   text-align: center;
+    position: absolute;
+    top: 140px;
+
+}
+
+.CTA div.button {
+width: 323px;
+    border-radius: 5px;
+    background: #2D89EF;; /* Для старых браузров */
+    background: linear-gradient(to right, #4881c3, #77a7dc);
+    padding: 10px;
+    border: 1px solid #246ebf;
+    margin: 30px auto 0;
+}
+
+.CTA h2 {
+    /*margin-top: 130px;*/
+    font-size: 48px;
+}
+
+.CTA p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.CTA a {
+    display: block;
+}
+
+div.credibility {
+    padding: 0 70px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.credibility h2 {
+    float: left;
+    margin-top: 25px;
+    color: #333;
+    margin-right: 30px;
+}
+div.media-list {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.media-list a {
+    /*display: inline-block;*/
+    flex: 1;
+
+}
+
+.media-list img {
+    height: 80px;
+}
+
+div.sm-subscribe {
+    background-color: #1eb6e7;
+    width: 100%;
+    height: 250px;
+    padding: 0 70px;
+}
+
+div.podcast {
+width: 50%;
+    float: left;
+}
+
+div.offer {
+    width: 50%;
+    float: right;
+}
