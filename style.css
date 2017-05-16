@@ -375,3 +375,47 @@ width: 50px;
 .sub img.btn-youtube {
     height: 33.83px;
 }
+footer {
+    background-color: #030402;
+    /*position: relative;*/
+    /*padding: 60px 110px 0;*/
+}
+div.footer-head {
+    /*background-color: #030402;*/
+    position: relative;
+    padding: 60px 110px 0;
+}
+div.footer {
+    float: left;
+    width: 500px;
+}
+.big-logo img {
+    width: 500px;
+}
+
+div.partnership {
+    float: right;
+}
+
+div.legalese {
+    background-color: #151414;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+div.button {
+    width: 280px;
+    height: 50px;
+    border: 2px solid #08b6e6;
+    border-radius: 3px;
+    text-align: center;
+    margin: 30px auto 30px;
+}
+.partnership h2 {
+    color: white;
+}
+.button a {
+    display: block;
+    padding: 9px;
+}
