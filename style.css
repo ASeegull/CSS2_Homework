@@ -193,7 +193,7 @@ div.person {
     margin-top: 60px;
 }
 
-div.photo {
+div.photo img {
     padding-top: 10px;
     width: 200px;
     float: left;
@@ -254,4 +254,124 @@ p.previous {
 
 .accent {
     color: #08b6e6;
+}
+
+.cap {
+    text-transform: uppercase;
+}
+
+h2, h3, h4 {
+    text-transform: capitalize;
+}
+
+div.popular {
+    background-color: white;
+    padding: 60px 110px;
+
+}
+
+section.popular-list {
+    float: left;
+    width: 700px;
+    display: flex;
+    flex-flow: column wrap;
+    /*justify-content: */
+padding-bottom: 70px;
+}
+aside {
+    float: right;
+    width: 320px;
+    /*margin-right: 110px;*/
+}
+
+.popular-list div.episode {
+flex: 1;
+width: 100%;
+    margin-right: 40px;
+
+}
+
+.popular-list {
+    width: 100%;
+}
+.popular-list .episode img {
+    width: 170px;
+    float: left;
+}
+
+div.about-person {
+    float: left;
+    clear: right;
+    width: 60%;
+}
+.popular-list h2 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    /*font-weight: bolder;*/
+}
+
+div.media-options {
+    clear: both;
+    background-color: #cdcece;
+}
+
+.media-options header {
+    text-align: center;
+    padding-top: 32px;
+}
+
+div.option-list {
+    display: flex;
+    width: 100%;
+flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+div.number {
+    background-color: black;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    font-size: 58px;
+    text-align: center;
+    padding: 21px;
+    font-weight: 800;
+    float: left;
+}
+
+div.option {
+    position: relative;
+}
+.option div.sub {
+    float: right;
+    padding-left: 15px;
+    line-height: 20px;
+    /*position: relative;*/
+    width: 180px;
+}
+.sub p {
+    clear: both;
+    padding-bottom: 10px;
+}
+.sub div:first-of-type {
+    float: left;
+}
+
+.sub div:last-of-type {
+    float: right;
+}
+
+img.blab {
+width: 50px;
+}
+
+.sub img.btn-small {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.sub img.btn-youtube {
+    height: 33.83px;
 }
