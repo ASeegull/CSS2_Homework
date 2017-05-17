@@ -1,3 +1,6 @@
+
+/*common styles*/
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +13,27 @@ body {
     line-height: 28px;
     color: #666;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3, h4 {
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 20px;
+}
+.cap {
+    text-transform: uppercase;
+}
+
+.accent {
+    color: #08b6e6;
+}
+
+/*styles for navbar*/
 
 .wrapper {
     margin-top: 80px;
@@ -47,13 +71,8 @@ ul.nav-list {
     flex: 1;
     color: #666;
     width: 100px;
-    /*flex-direction: row;*/
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 .nav-list a:hover {
     color: #08b6e6;
@@ -61,6 +80,8 @@ a {
 .search img {
     width: 17px;
 }
+
+/*styles for main banner aka jumbotrone*/
 
 div.banner {
     color: white;
@@ -72,14 +93,14 @@ div.banner {
 
 div.CTA {
     width: 100%;
-   text-align: center;
+    text-align: center;
     position: absolute;
     top: 140px;
 
 }
 
-.CTA div.button {
-width: 323px;
+.CTA div.main-button {
+    width: 323px;
     border-radius: 5px;
     background: #2D89EF;; /* Для старых браузров */
     background: linear-gradient(to right, #4881c3, #77a7dc);
@@ -89,7 +110,6 @@ width: 323px;
 }
 
 .CTA h2 {
-    /*margin-top: 130px;*/
     font-size: 48px;
 }
 
@@ -101,6 +121,9 @@ width: 323px;
 .CTA a {
     display: block;
 }
+
+/*styles for media-credibility*/
+
 
 div.credibility {
     padding: 0 110px;
@@ -122,15 +145,11 @@ div.media-list {
     justify-content: center;
 }
 
-.media-list a {
-    /*display: inline-block;*/
-    flex: 1;
-
-}
-
 .media-list img {
     height: 80px;
 }
+
+/*end of media-subscribe*/
 
 div.sm-subscribe {
     color: white;
@@ -141,7 +160,7 @@ div.sm-subscribe {
 }
 
 div.podcast {
-width: 50%;
+    width: 50%;
     float: left;
     margin: 30px 0;
 }
@@ -152,8 +171,13 @@ div.offer {
     padding: 30px;
 }
 
+.offer p {
+    font-size: 21px;
+}
+
 .offer ul {
     margin-top: 12px;
+    font-size: 20px;
 }
 
 div.btn-itunes {
@@ -174,20 +198,22 @@ div.btn-stitcher {
     margin-right: 40px;
 }
 
+/*current (speakers section)*/
+
 .speakers h2 {
     font-size: 35px;
     text-align: center;
     margin-top: 40px;
 }
 
-div.episode-list {
+div.speach-list {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     margin-bottom: 100px;
 }
 
-div.person {
+.speaker {
     width: 600px;
     padding: 5px;
     margin-top: 60px;
@@ -199,15 +225,14 @@ div.photo img {
     float: left;
 }
 
-.about-person h4 {
 
-}
-
-div.about-person {
+div.about-speaker {
     padding: 0 20px;
     float: right;
     width: 358px;
 }
+
+/*latest section*/
 
 section.latest {
     background-color: #181818;
@@ -231,7 +256,7 @@ div.episode {
     width: 260px;
     padding: 0 15px;
 }
-.speaker img {
+.person img {
     width: 230px;
 }
 
@@ -240,29 +265,23 @@ div.btn {
     height: 50px;
     border: 2px solid #08b6e6;
     border-radius: 3px;
-text-align: center;
+    text-align: center;
     margin: 30px auto 30px;
 }
 .btn a {
-    display: inline-block;
+    display: block;
     padding: 10px;
-
+    width: 100%;
 }
+
+
 p.previous {
     margin-left: 170px;
 }
 
-.accent {
-    color: #08b6e6;
-}
 
-.cap {
-    text-transform: uppercase;
-}
+/* popular section*/
 
-h2, h3, h4 {
-    text-transform: capitalize;
-}
 
 div.popular {
     background-color: white;
@@ -272,43 +291,60 @@ div.popular {
 
 section.popular-list {
     float: left;
-    width: 700px;
+    width: 800px;
     display: flex;
     flex-flow: column wrap;
-    /*justify-content: */
-padding-bottom: 70px;
-}
-aside {
-    float: right;
-    width: 320px;
-    /*margin-right: 110px;*/
+    padding-bottom: 70px;
 }
 
-.popular-list div.episode {
-flex: 1;
-width: 100%;
-    margin-right: 40px;
-
+.popular-list .speech {
+    flex: 1;
+    width: 100%;
+    margin-top: 15px;
+    padding-right: 50px;
 }
 
 .popular-list {
     width: 100%;
 }
-.popular-list .episode img {
+.speech img {
     width: 170px;
     float: left;
+    margin-right: 25px;
 }
 
-div.about-person {
-    float: left;
-    clear: right;
-    width: 60%;
-}
 .popular-list h2 {
     padding-bottom: 30px;
     font-size: 30px;
-    /*font-weight: bolder;*/
 }
+
+/*aside*/
+
+aside {
+    float: right;
+    width: 320px;
+}
+
+aside img {
+    padding-top: 25px;
+}
+
+aside footer {
+    background-color: white;
+    padding-bottom: 80px;
+    position: relative;
+    font-size: 12px;
+}
+
+a.left {
+    float: left;
+}
+
+a.right {
+    float: right;
+}
+/*aside*/
+
 
 div.media-options {
     clear: both;
@@ -323,7 +359,7 @@ div.media-options {
 div.option-list {
     display: flex;
     width: 100%;
-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -336,7 +372,7 @@ div.number {
     border-radius: 50%;
     font-size: 58px;
     text-align: center;
-    padding: 21px;
+    padding-top: 20px;
     font-weight: 800;
     float: left;
 }
@@ -344,16 +380,17 @@ div.number {
 div.option {
     position: relative;
 }
-.option div.sub {
+.option .sub {
     float: right;
     padding-left: 15px;
     line-height: 20px;
-    /*position: relative;*/
     width: 180px;
 }
-.sub p {
+.sub h5 {
     clear: both;
     padding-bottom: 10px;
+    font-size: 19px;
+
 }
 .sub div:first-of-type {
     float: left;
@@ -364,7 +401,7 @@ div.option {
 }
 
 img.blab {
-width: 50px;
+    width: 50px;
 }
 
 .sub img.btn-small {
@@ -373,15 +410,16 @@ width: 50px;
 }
 
 .sub img.btn-youtube {
-    height: 33.83px;
+    height: 34px;
 }
+
+/*footer*/
+
 footer {
     background-color: #030402;
-    /*position: relative;*/
-    /*padding: 60px 110px 0;*/
 }
+
 div.footer-head {
-    /*background-color: #030402;*/
     position: relative;
     padding: 60px 110px 0;
 }
@@ -397,11 +435,16 @@ div.partnership {
     float: right;
 }
 
+div.summary {
+    padding-bottom: 60px;
+}
+
 div.legalese {
     background-color: #151414;
     clear: both;
     width: 100%;
     text-align: center;
+    font-size: 13px;
 }
 
 div.button {
@@ -412,10 +455,14 @@ div.button {
     text-align: center;
     margin: 30px auto 30px;
 }
+
 .partnership h2 {
     color: white;
 }
+
 .button a {
     display: block;
     padding: 9px;
 }
+
+
